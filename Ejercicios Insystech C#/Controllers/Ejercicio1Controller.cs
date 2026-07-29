@@ -8,7 +8,7 @@ namespace Ejercicios_Insystech_C_.Controllers
     public class Ejercicio1Controller : ControllerBase
     {
         [HttpGet]
-        public IActionResult ProbarConectividad()
+        public async Task<IActionResult> ProbarConectividad()
         {
             string mensaje = "La conexión ha sido establecida con éxito";
             return Ok(new { msg = mensaje });

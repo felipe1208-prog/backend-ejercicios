@@ -17,7 +17,7 @@ namespace Ejercicios_Insystech_C_.Controllers
         }
 
         [HttpPost]
-        public IActionResult GuardarTasa([FromBody] TasaDivisaDTO request)
+        public async Task<IActionResult> GuardarTasa([FromBody] TasaDivisaDTO request)
         {
             if (request == null)
             {
