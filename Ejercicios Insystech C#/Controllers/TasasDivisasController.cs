@@ -12,7 +12,7 @@ namespace Ejercicios_Insystech_C_.Controllers
     [ApiController]
     public class TasasDivisasController : ControllerBase
     {
-        private static AlmacenTasas _almacen;
+        private readonly AlmacenTasas _almacen;
 
         public TasasDivisasController(AlmacenTasas almacen)
         {
@@ -56,7 +56,7 @@ namespace Ejercicios_Insystech_C_.Controllers
 
             if (!tasasRegistradaPorDivisa.Any()) 
             {
-                return NotFound(new { mensaje = "Aún no hay registros para esta tasa. Te invitamos a registrar una en la sección 'Tasas del Día'" });
+                return NotFound(new { mensaje = "Aún no hay registros para esta tasa. Te invitamos a registrar una en la sección 'Tasas del Día'." });
             }
 
             return Ok(tasasRegistradaPorDivisa);
