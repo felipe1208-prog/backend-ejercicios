@@ -5,7 +5,7 @@ namespace Ejercicios_Insystech_C_.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Ejercicio2Controller : ControllerBase
+    public class Ejercicio3Controller : ControllerBase
     {
         [HttpPost("{sueldo}")]
         public async Task<IActionResult> CalculoSueldo([FromQuery] decimal? sueldo)
