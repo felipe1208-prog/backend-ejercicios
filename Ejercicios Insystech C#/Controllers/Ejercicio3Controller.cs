@@ -15,6 +15,9 @@ namespace Ejercicios_Insystech_C_.Controllers
                 return BadRequest(new { MensajeError400 = "Introduzca un sueldo válido" });
             }
 
+            //Fondo de Ahorro Obligatorio para la Vivienda: 1%
+            //Seguro Social Obligatorio: 4%
+            //Régimen Prestacional de Empleo: 0.5%
             var sueldoLuegoImpuestos = sueldo - (sueldo * 0.055m);
 
             return Ok(sueldoLuegoImpuestos);
