@@ -25,11 +25,12 @@ namespace Ejercicios_Insystech_C_.Controllers
             var sueldoLuegoImpuestos = sueldo - (sueldo * 0.055m);
 
             return Ok( new 
-            { 
+            {   
+                sueldoInicial = sueldo,
                 sueldoFinal = sueldoLuegoImpuestos,
-                fondoAhorroObligatorio = fao,
-                seguroSocialObligatorio = sso,
-                regimenPrestacionalDeEmpleo = rpe
+                fondoAhorroObligatorio = fao * sueldo,
+                seguroSocialObligatorio = sso * sueldo,
+                regimenPrestacionalDeEmpleo = rpe * sueldo
             });
         }
     }
