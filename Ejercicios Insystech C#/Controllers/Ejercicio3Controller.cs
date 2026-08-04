@@ -16,11 +16,21 @@ namespace Ejercicios_Insystech_C_.Controllers
             }
 
             //Fondo de Ahorro Obligatorio para la Vivienda: 1%
+            decimal fao = 0.01m;
             //Seguro Social Obligatorio: 4%
+            decimal sso = 0.04m;
             //Régimen Prestacional de Empleo: 0.5%
+            decimal rpe = 0.005m;
+
             var sueldoLuegoImpuestos = sueldo - (sueldo * 0.055m);
 
-            return Ok(sueldoLuegoImpuestos);
+            return Ok( new 
+            { 
+                sueldoFinal = sueldoLuegoImpuestos,
+                fondoAhorroObligatorio = fao,
+                seguroSocialObligatorio = sso,
+                regimenPrestacionalDeEmpleo = rpe
+            });
         }
     }
 }
