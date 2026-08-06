@@ -17,10 +17,10 @@ namespace Ejercicios_Insystech_C_.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> BuscarEmpleado([FromQuery] string termino)
+        public async Task<IActionResult> BuscarEmpleado([FromQuery] string? termino)
         {
 
-            if (string.IsNullOrWhiteSpace(termino)) return BadRequest(new { mensaje = "Ingrese un término de busqueda válido" });
+            if (string.IsNullOrWhiteSpace(termino) || string.IsNullOrEmpty(termino)) return BadRequest(new { mensaje = "Ingrese un término de busqueda válido" });
             
             var listaEmpleados = _empleados.ObtenerEmpleados();
 
