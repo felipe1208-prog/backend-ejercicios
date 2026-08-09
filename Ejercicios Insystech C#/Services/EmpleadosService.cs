@@ -8,6 +8,7 @@ namespace Ejercicios_Insystech_C_.Services
         private readonly List<EmpleadosDTO> Empleados = new List<EmpleadosDTO>
         {
             new EmpleadosDTO { Id = 1, Nombre = "Felipe Ortiz" },
+            new EmpleadosDTO { Id = 1, Nombre = "Edgar Paredes"},
             new EmpleadosDTO { Id = 2, Nombre = "Javier Rojas" },
             new EmpleadosDTO { Id = 3, Nombre = "Gilman Perez" },
             new EmpleadosDTO { Id = 4, Nombre = "Francisco Chacon" },
