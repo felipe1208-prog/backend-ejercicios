@@ -24,15 +24,15 @@ namespace Ejercicios_Insystech_C_.Services
             new UsuarioDTO { Nombre = "Edgar", CorreoElectronico = "eparedes@insystech.com.ve", Clave = "1" }
         };
 
-        public string VerificacionUsuario(UsuarioDTO request)
+        public (int, string) VerificacionUsuario(UsuarioDTO request)
         {
             var usuarioEncontrado = UsuarioRegistrados.FirstOrDefault(usuario => usuario.CorreoElectronico == request.CorreoElectronico);
 
-            if (usuarioEncontrado == null) return "Usuario no Encontrado";
-            if (usuarioEncontrado.Nombre != request.Nombre) return $"El nombre '{request.Nombre}' es inválido.";
-            if (usuarioEncontrado.Clave != request.Clave) return $"La contraseña es incorrecta.";
+            if (usuarioEncontrado == null) return (404, "Usuario no Encontrado");
+            if (usuarioEncontrado.Nombre != request.Nombre) return (400, $"El nombre '{request.Nombre}' es inválido.");
+            if (usuarioEncontrado.Clave != request.Clave) return (400, $"La contraseña es incorrecta.");
 
-            return $"Bienvenido {request.Nombre}!. Inciaste sesión correctamente.";
+            return (200, $"Bienvenido {request.Nombre}!. Inciaste sesión correctamente.");
         }
     }
 
