@@ -21,7 +21,7 @@ namespace Ejercicios_Insystech_C_.Controllers
             var (status, mensaje) = _login.VerificacionUsuario(request);
 
             if (status == 404) return NotFound(new { mensaje = mensaje });
-            if (status == 400) return NotFound(new { mensaje = mensaje });
+            if (status == 400) return BadRequest(new { mensaje = mensaje });
 
             return Ok( new { mensaje = mensaje });
         }
