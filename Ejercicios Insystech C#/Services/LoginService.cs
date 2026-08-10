@@ -30,7 +30,7 @@ namespace Ejercicios_Insystech_C_.Services
 
             if (usuarioEncontrado == null) return "Usuario no Encontrado";
             if (usuarioEncontrado.Nombre != request.Nombre) return $"El nombre '{request.Nombre}' es inválido.";
-            if (usuarioEncontrado.Nombre != request.Nombre) return $"La contraseña es incorrecta.";
+            if (usuarioEncontrado.Clave != request.Clave) return $"La contraseña es incorrecta.";
 
             return $"Bienvenido {request.Nombre}!. Inciaste sesión correctamente.";
         }
