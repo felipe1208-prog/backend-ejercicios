@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton<AlmacenTasas>();
 builder.Services.AddSingleton<EmpleadosService>();
+builder.Services.AddSingleton<LoginService>();
 
 builder.Services.AddCors(options =>
 {
