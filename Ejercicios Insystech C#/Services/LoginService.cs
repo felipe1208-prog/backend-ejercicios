@@ -8,12 +8,12 @@ namespace Ejercicios_Insystech_C_.Services
     {
         private readonly List<UsuarioDTO> UsuarioRegistrados = new List<UsuarioDTO>
         {
-            new UsuarioDTO { Nombre = "Felipe", CorreoElectronico = "dev@insystech.com.ve", Clave = "Inicial2026*." },
-            new UsuarioDTO { Nombre = "Pascia", CorreoElectronico = "dev@insystech.com.ve", Clave = "Inicial2026*." },
-            new UsuarioDTO { Nombre = "Freddy", CorreoElectronico = "dev@insystech.com.ve", Clave = "Inicial2026*." },
-            new UsuarioDTO { Nombre = "Alejandro", CorreoElectronico = "dev@insystech.com.ve", Clave = "Inicial2026*." },
-            new UsuarioDTO { Nombre = "Jose", CorreoElectronico = "dev@insystech.com.ve", Clave = "Inicial2026*." },
-            new UsuarioDTO { Nombre = "Diego", CorreoElectronico = "dev@insystech.com.ve", Clave = "Inicial2026*." },
+            new UsuarioDTO { Nombre = "Felipe", CorreoElectronico = "fortiz@insystech.com.ve", Clave = "Inicial2026*." },
+            new UsuarioDTO { Nombre = "Pascia", CorreoElectronico = "jpascia@insystech.com.ve", Clave = "Inicial2026*." },
+            new UsuarioDTO { Nombre = "Freddy", CorreoElectronico = "fborjas@insystech.com.ve", Clave = "Inicial2026*." },
+            new UsuarioDTO { Nombre = "Alejandro", CorreoElectronico = "aavendano@insystech.com.ve", Clave = "Inicial2026*." },
+            new UsuarioDTO { Nombre = "Jose", CorreoElectronico = "jrangel@insystech.com.ve", Clave = "Inicial2026*." },
+            new UsuarioDTO { Nombre = "Diego", CorreoElectronico = "dquintero@insystech.com.ve", Clave = "Inicial2026*." },
             new UsuarioDTO { Nombre = "Gilman", CorreoElectronico = "gperez@insystech.com.ve", Clave = "Gilmanito007" },
             new UsuarioDTO { Nombre = "Victor", CorreoElectronico = "vpiedra@insystech.com.ve", Clave = "Lucky" },
             new UsuarioDTO { Nombre = "Gregory", CorreoElectronico = "ggomez@insystech.com.ve", Clave = "Strike" },
